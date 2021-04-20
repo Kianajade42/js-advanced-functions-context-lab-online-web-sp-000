@@ -81,7 +81,7 @@ let allWagesFor = function () {
     return payable
 }
 
-let findEmployeebyFirstName = function(collection, firstNameString) {
+let findEmployeeByFirstName = function(collection, firstNameString) {
   return collection.find(function(rec){
     return rec.firstNameString === firstNameString
   })
