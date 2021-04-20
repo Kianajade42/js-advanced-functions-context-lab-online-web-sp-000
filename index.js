@@ -80,12 +80,12 @@ let allWagesFor = function () {
 
     return payable
 }
-
-let findEmployeeByFirstName = function(collection, firstNameString) {
-  return collection.find(function(rec){
-    return rec.firstNameString === firstNameString
+let findEmployeeByFirstName = function(srcArray, firstName) {
+  return srcArray.find(function(rec){
+    return rec.firstName === firstName
   })
 }
+
 
 let calculatePayroll = function(arrayOfEmployeeRecords){
     return arrayOfEmployeeRecords.reduce(function(memo, rec){
